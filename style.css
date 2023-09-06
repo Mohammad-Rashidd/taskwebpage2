@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --twitter-color:rgb(52, 184, 228);
+    --twitter-background: rgb(236, 229, 229);
+}
+
+.sidepart {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidepart .material-icons, .fa-twitter {
+    padding: 20px;
+}
+
+.sidepart h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidepart:hover {
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+}
+
+.sidesection_post {
+    width:100%;
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.sidesection_post:hover {
+    cursor: pointer;
+    background-color:blue;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+.sidesection {
+    border-right: 1px solid var(--twitter-background);
+    width:25%;
+}
+
+.fa-twitter {
+    color: var(--twitter-color);
+    font-size: 35px;
+}
+
+/* center section styling */
+
+.center {
+    width: 55%;
+    overflow-y: scroll;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+.header h2 {
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center::-webkit-scrollbar {
+ display: none;   
+}
+
+.center {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.center:hover {
+    cursor: pointer;
+}
+
+/* styling the postbox */
+
+.postbox_input img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.postbox {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-right: 10px;
+}
+
+.postbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.postbox_input {
+    display: flex;
+    padding: 20px;
+}
+
+.postbox_input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 22px;
+border: none;
+outline: none;
+}
+
+.postbox_post {
+    background-color: var(--twitter-color);
+    border-radius: 30px;
+   border: none;
+   font-weight: 900;
+   width: 80px;
+   height: 40px;
+   margin-top: 20px;
+   margin-left: auto;
+   margin-right: 20px;
+   color: white;
+}
+
+/* post section styling start */
+
+.post_profile img {
+    border-radius: 50%;
+    height:60px;
+}
+
+.post {
+    display: flex;
+    flex-direction:row;
+    border-bottom: 2px solid var(--twitter-background);
+    padding: 10px 15px;
+}
+
+.post_body img {
+    object-fit: cover;
+    border-radius: 20px;
+    width:100%;
+}
+
+.post_footer {
+display: flex;
+justify-content: space-between;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.post_badge {
+    font-size: 20px !important;
+    color: var(--twitter-color);
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.post_headerspecial {
+    font-weight: 600;
+    font-size: 18px;
+    color: gray;
+}
+
+.post_headtext h3 {
+    font-size: 20x;
+    margin-bottom: 5px;
+}
+
+.post_headdescription {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.post_body {
+    padding: 10px 15px;
+    width:100%;
+}
+
+.post_profile {
+    padding: 10px;
+}
+
+
+.post_headtext {
+    display: flex;
+}
+/* post section styling end */
+
+/* right section styling */
+
+.right {
+  width: 30%;
+}
+
+.right_input {
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 2px;
+    margin-left: 20px;
+    width: 90%;
+    height: 55px;
+}
+
+.right_input input {
+    border:none;
+    background-color:var(--twitter-background);
+    outline: none;
+    font-size: medium;
+}
+
+.right_searchicon {
+    color: gray;
+}
+
+.widgets {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: rgb(235, 235, 234);
+    border-radius: 20px;
+    width: 90%;
+}
+
+.widgets h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+@media (max-width:1233px){
+    .center {
+        display: none;
+    }
+}
+
+@media (max-width:1570px){
+    .right {
+        display: none;
+    }
+    }
+
+    @media (max-width:270px){
+        .sidesection {
+            display: none;
+        }
+        }
